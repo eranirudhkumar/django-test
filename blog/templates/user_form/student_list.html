@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+</head>
+<body>
+<h1>{{key}}</h1>
+<ol>
+    {% for st in student_list %}
+    <li>
+        <ul style="background-color:lightblue;margin-top:20px;margin-bottom:20px">
+            <li>{{st.user_name}}</li>
+            <li>{{st.user_pass}}</li>
+            <li>{{st.user_email}}</li>
+        </ul>
+    </li>
+    {% endfor %}
+</ol>
+</body>
+</html>

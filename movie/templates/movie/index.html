@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>Movie List</title>
+</head>
+<body>
+
+<img src="{% static 'img/Inspirational.jpg' %}" alt="Image-1">
+
+
+<h2>All Movies-</h2>
+<ul>
+    {% for m in all_movie %}
+    <li><a href="{{m.id}}/">{{m}}</a></li>
+    {% endfor %}
+</ul>
+
+
+{% if messages %}
+{% for msg in messages %}
+<script>
+    alert("{{msg}}");
+
+
+</script>
+{% endfor %}
+{% endif %}
+
+
+<!--{% if messages %}-->
+<!--<ul class="messages">-->
+<!--{% for message in messages %}-->
+<!--<li>{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>-->
+<!--{% endfor %}-->
+<!--</ul>-->
+<!--{% endif %}-->
+
+<a href="/movies/new-movie/">Create New</a>
+
+</body>
+</html>

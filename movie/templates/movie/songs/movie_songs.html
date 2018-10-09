@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Songs</title>
+</head>
+<body>
+
+{% if messages %}
+{% for msg in messages %}
+<script>
+alert("{{msg}}");
+location.href="/movies/"
+
+</script>
+{% endfor %}
+
+
+{% else %}
+<ol>
+    {% for songs in movie_songs %}
+    <li>
+        <p>{{songs}} - {{songs.song_type}} - {{songs.song_length}}</p>
+    </li>
+    {% endfor %}
+</ol>
+
+{% endif %}
+</body>
+</html>

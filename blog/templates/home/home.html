@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'user_form/w3school.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <title>Bootstrap Home</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/blog/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4" style="background-color:red">
+            <p>Bootstrap requires a containing element to wrap site contents and house our grid system. You may choose
+                one of two containers to use in your projects. Note that, due to padding and more, neither container is
+                nestable.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4" style="background-color:green">
+            <p>Bootstrap requires a containing element to wrap site contents and house our grid system. You may choose
+                one of two containers to use in your projects. Note that, due to padding and more, neither container is
+                nestable.</p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4" style="background-color:blue">
+            <p>Bootstrap requires a containing element to wrap site contents and house our grid system. You may choose
+                one of two containers to use in your projects. Note that, due to padding and more, neither container is
+                nestable.</p>
+        </div>
+    </div>
+    <!--<div class="jumbotron text-center">-->
+    <!--<h1 class="header">Bootstrap Home HTML</h1>-->
+    <!--</div>-->
+</div>
+</body>
+</html>
